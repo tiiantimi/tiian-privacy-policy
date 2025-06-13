@@ -2,135 +2,136 @@
 <html lang="hu">
 <head>
   <meta charset="utf-8" />
-  <title>TIIAN – Adatkezelési tájékoztató (Android & iOS)</title>
+  <title>TIIAN – Adatkezelési tájékoztató</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body{font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;max-width:780px;margin:0 auto;padding:1.6rem;line-height:1.6}
-    h1,h2{margin-top:2.2rem}
-    h3{margin-top:1.4rem}
-    ul{margin-left:1.4rem}
-    table{border-collapse:collapse;font-size:0.95rem;width:100%}
+    body{font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;max-width:900px;margin:0 auto;padding:1.6rem;line-height:1.6}
+    h1{margin-top:2rem}
+    h2{margin-top:1.6rem}
+    pre{white-space:pre-wrap;font-family:inherit}
+    table{border-collapse:collapse;width:100%;font-size:.95rem;margin-top:2rem}
     th,td{border:1px solid #ccc;padding:6px 9px;vertical-align:top}
     th{background:#fafafa}
-    code{background:#f3f3f3;padding:2px 4px;border-radius:4px;font-size:90%}
   </style>
 </head>
 <body>
 
 <h1>TIIAN Applikáció – Adatkezelési tájékoztató</h1>
-<p><strong>Hatályos: [2025-06-12]</strong></p>
-<p>Ez a dokumentum az Android (<em>Google Play Data Safety</em>) és az iOS (<em>App Store Connect › App Privacy</em>) követelményeit is kielégíti.</p>
+<p><strong>Hatályos: 2025-06-12</strong></p>
 
-<!-- 1 -->
-<h2>1. Az adatkezelő adatai</h2>
+<h2>Az adatkezelő adatai</h2>
 <ul>
-  <li><strong>Név:</strong> TIIAN INVEST Kft.</li>
-  <li><strong>Székhely:</strong> [Cím]</li>
+  <li><strong>Név:</strong> Tiian Invest Kft.</li>
+  <li><strong>Székhely:</strong> 1065 Budapest, Bajcsy-Zsilinszky út 37. III/10.</li>
   <li><strong>E-mail:</strong> <a href="mailto:ugyfelszolgalat@tiian.hu">ugyfelszolgalat@tiian.hu</a></li>
 </ul>
 
-<!-- 2 -->
-<h2>2. Az adatkezelés célja</h2>
-<p>
-A TIIAN mobilalkalmazás (a továbbiakban: <strong>„Applikáció”</strong>) a Felhasználók egészségtudatos életmódjának és diétás folyamataiknak támogatására szolgál: testsúly nyomon követése, étkezési intervallumok beállítása, napi vízfogyasztás-emlékeztetők.  
-Az App funkciói csak érvényes digitális előfizetéssel (<em>in-app subscription</em>) használhatók, melyek pénzügyi és technikai teljesítését az Apple App Store, illetve a Google Play Store végzi. A TIIAN INVEST Kft. nem gyűjt és nem kezel bank- vagy kártyaadatot.
-</p>
+<hr>
 
-<!-- 3 -->
-<h2>3. Kezelt adatok köre</h2>
+<pre>
+IV.2.3. TIIAN APPLIKÁCIÓ (MOBILALKALMAZÁS) ADATKEZELÉSE
+1. Az adatkezelés célja
+A TIIAN Applikáció (a továbbiakban: „Applikáció”) elsődleges rendeltetése a felhasználók (a továbbiakban: „Felhasználó”) egészségtudatos életmódjának és diétás folyamataiknak támogatása, különös tekintettel a testsúly nyomon követésére,
+az étkezési intervallumok beállítására, valamint a napi vízfogyasztásra vonatkozó emlékeztetők alkalmazására.
+Az Applikáció funkcióit csak érvényes digitális előfizetés (in-app subscription) igénybevételével lehet használni, amelynek
+pénzügyi és technikai teljesítését az Apple App Store, illetve a Google Play Store biztosítja. A TIIAN INVEST Kft. (a továbbiakban: „Adatkezelő”) ezáltal sem banki, sem egyéb fizetési adatot nem gyűjt és nem kezel, mivel az előfizetések díjainak
+beszedése közvetlenül az Apple és/vagy a Google rendszerein keresztül történik.
 
-<h3>3.1 Regisztrációs és azonosító adatok</h3>
-<ul>
-  <li>Név, e-mail-cím, jelszó (BCrypt / argon2 hash)</li>
-  <li>Felhasználói azonosítók: Firebase UID, RevenueCat User ID</li>
-</ul>
+2. A kezelt adatok köre
+1. Regisztrációs és azonosító adatok
+• Név, e-mail cím, jelszó (titkosított formában tárolva).
+• Felhasználói azonosítók (a Firebase szolgáltatás keretében generált egyedi ID-k).
+2. Előfizetésre vonatkozó adatok
+• Előfizetés típusa, státusza, érvényességi ideje.
+• Az Applikáció a RevenueCat szolgáltatás segítségével ellenőrzi az előfizetés jogszerűségét és aktív állapotát,
+ugyanakkor a fizetési tranzakciók lebonyolítása – beleértve a bankkártyaadatokat – kizárólag az Apple és/vagy
+a Google hatáskörébe tartozik.
+3. Egészségügyi és életmód adatok
+• Testsúlyra, testméretekre (pl. derék-, csípőbőség) vonatkozó bejegyzések.
+• Étkezési napló, diétás és táplálkozási szokások, vízfogyasztás nyomon követése, amennyiben a Felhasználó ezeket rögzíti.
+• Az esetlegesen feltöltött képfájlok (például testsúlykövetés céljából készített fotók), melyeket a rendszer többnyire
+felhőalapú tárhelyszolgáltatásban (Firebase) tárol.
+4. Naplózási és analitikai adatok
+• Technikai információk az Applikáció használatáról (pl. eszköztípus, operációs rendszer, IP-cím, naplózott események időbélyege), a biztonságos működés és a felhasználói élmény optimalizálása céljából.
+Felhívjuk a Felhasználók figyelmét, hogy a testsúlyra és testméretekre (például derék-, csípőbőség) vonatkozó információk a GDPR
+alapján egészségügyi adatként, és így különleges adatként kezelendők. Az Applikáció elsődlegesen e személyes adatok önkéntes
+megadására és a hozzájuk kapcsolódó diétás vagy életmódcélok nyomon követésére szolgál.
+Az Applikáció letöltésével és az előfizetési folyamat véglegesítésével a Felhasználó kifejezetten elfogadja és hozzájárul, hogy
+az általa bevitt ilyen jellegű adatokat az Adatkezelő – a jelen Adatkezelési Szabályzat rendelkezéseinek megfelelően – kezelje.
+A Felhasználó továbbra is bármikor visszavonhatja hozzájárulását, ami azonban nem érinti a visszavonás előtt végzett adatkezelési műveletek jogszerűségét.
 
-<h3>3.2 Előfizetésre vonatkozó adatok</h3>
-<ul>
-  <li>Előfizetés típusa, státusza, érvényességi ideje</li>
-  <li>Az App a RevenueCat SDK-n keresztül csak az előfizetés állapotát kapja (aktív / lejárt); fizetési adatokat nem</li>
-</ul>
+3. Az adatkezelés jogalapja
+• Önkéntes, kifejezett hozzájárulás (GDPR 6. cikk (1) a) pont): A Felhasználó által megadott egészségügyi és egyéb
+életmódbeli adatok kezelése kizárólag a Felhasználó beleegyezésén alapul.
+• Szerződés teljesítése (GDPR 6. cikk (1) b) pont): Az Applikáció regisztrációhoz és előfizetéshez kötött használatának
+biztosítása, valamint az Applikáció alapvető funkcióinak nyújtása ezen a jogalapon valósul meg.
+• Jogos érdek (GDPR 6. cikk (1) f) pont): A rendszerbiztonság fenntartása, a visszaélések megelőzése és az Applikáció
+stabil működésének biztosítása érdekében.
+• Jogi kötelezettség teljesítése (GDPR 6. cikk (1) c) pont): Ha bármely hatóság jogszabály alapján kötelező adatkezelést
+vagy adattovábbítást ír elő, az Adatkezelő e kötelezettségének eleget tesz.
 
-<h3>3.3 Egészségügyi és életmód adatok</h3>
-<ul>
-  <li>Testsúly, testméretek (pl. derék-, csípőbőség)</li>
-  <li>Étkezési napló, diétás szokások, napi vízfogyasztás</li>
-  <li>Felhasználó által feltöltött fotók (haladásfotók) – titkosítva, Firebase Storage-ban</li>
-</ul>
+4. Díjak, előfizetési konstrukciók, fizetési információk
+• A TIIAN Applikáció szolgáltatásai kizárólag díjfizetés ellenében érhetők el, amelyért az Apple App Store és/vagy
+a Google Play Store felel:
+• Az előfizetésre vonatkozó díjak, akciók és egyéb részletek kizárólag az Apple, illetve a Google felületein kerülnek
+feltüntetésre.
+• Az Adatkezelő semmilyen fizetési vagy számlázási adatot nem rögzít vagy tárol, a pénzügyi tranzakció az Apple/
+Google rendszerein keresztül bonyolódik.
+• A RevenueCat közvetítő szolgáltatás révén kizárólag a Felhasználó előfizetésének érvényességére vonatkozó állapotinformáció jut el az Applikációhoz (pl. aktív/lejárt), bankkártyaadatok vagy egyéb számlázási részletek nem.
 
-<h3>3.4 Naplózási és analitikai adatok</h3>
-<ul>
-  <li>Technikai információk: eszköztípus, OS-verzió, IP-cím, crash-log, esemény-időbélyegek</li>
-</ul>
+5. Az adatkezelés időtartama
+1. Felhasználói fiókhoz kapcsolódó adatok: a fiók törlésének a Felhasználó általi kezdeményezéséig, illetve a szolgáltatási cél megvalósulásáig kezeli az Adatkezelő, figyelemmel a vonatkozó jogszabályi kötelezettségekre (pl. hatósági
+vizsgálat, jogi igény érvényesítése).
+2. Előfizetéshez kötött információk: az előfizetés érvényességének időtartama alatt, illetve – amennyiben a felhasználó
+lemondja az előfizetést – a lemondás regisztrálásáig, a szükséges adminisztratív folyamatok lezárultáig.
+3. Egészségügyi és életmód adatok: a Felhasználó hozzájárulásának visszavonásáig, a Felhasználói fiók törléséig, illetve
+legfeljebb addig, amíg ezen adatok kezelésére a cél megvalósításához (pl. testsúlykövetés) szükség van.
 
-<p><em>A testsúllyal és testméretekkel kapcsolatos adatok a GDPR szerint <strong>különleges (egészségügyi) adatok</strong>. Az Applikáció telepítésével és előfizetéssel a Felhasználó kifejezett hozzájárulását adja kezelésükhöz.</em></p>
+6. Adattovábbítás, adatfeldolgozók
+Az Adatkezelő a jelen Applikáció üzemeltetése és egyes funkciók teljesítése során az alábbi adatfeldolgozókkal működik együtt:
+• Firebase (Google LLC): felhőalapú adatbázis és hitelesítési szolgáltatás, amelyhez bizonyos, a Felhasználó által megadott információk (pl. képek, beállítások, profiladatok) kerülhetnek továbbításra.
+• RevenueCat: előfizetéskezelő platform, amely ellenőrzi a Felhasználó előfizetésének státuszát, de fizetési vagy bankkártyaadatot nem kap és nem továbbít.
+• Apple App Store és Google Play Store: a díjfizetéssel járó tranzakciós folyamatok kizárólagos lebonyolítói, az adatkezelési feltételeiket saját szerződéses és szabályzati kereteik határozzák meg.
+• Az Adatkezelő ezen felül kizárólag hatósági megkeresésre, illetve jogszabályban meghatározott kötelezettség teljesítése céljából továbbít adatokat harmadik fél részére.
 
-<!-- 4 -->
-<h2>4. Apple / Google megfeleltetési tábla</h2>
+7. Felhasználói jogok és jogorvoslati lehetőségek
+Tájékoztatáshoz való jog: A Felhasználó kérheti, hogy az Adatkezelő adjon tájékoztatást arról, milyen személyes adatait,
+milyen célból és milyen jogalapon kezeli, illetve mely címzettek részére továbbítja.
+• Hozzáférés, helyesbítés, törlés, adatkezelés-korlátozás, tiltakozás: A Felhasználó a mindenkor hatályos jogszabályokban (különösen a GDPR-ban) meghatározott módon és feltételek szerint kérheti személyes adatai helyesbítését, törlését
+vagy kezelésük korlátozását, továbbá tiltakozhat az Adatkezelő jogos érdeken alapuló adatkezelése ellen.
+• Adathordozhatósághoz való jog: A Felhasználó kérheti, hogy a rá vonatkozó, általa megadott és az Adatkezelő által
+automatizált módon kezelt személyes adatokat tagolt, széles körben használt, géppel olvasható formátumban rendelkezésre bocsássa, vagy – technikailag megvalósítható esetben – közvetlenül továbbítsa más adatkezelőhöz.
+• Jogorvoslat: Amennyiben a Felhasználó úgy véli, hogy az Adatkezelő a személyes adatait a vonatkozó jogszabályokba ütközően kezeli, panaszával fordulhat
+ o közvetlenül az Adatkezelőhöz (lásd a jelen Szabályzat I.4. pontját),
+ o a Nemzeti Adatvédelmi és Információszabadság Hatósághoz (cím: 1055 Budapest, Falk Miksa utca 9-11.;
+   postacím: 1363 Budapest, Pf. 9.; e-mail: ugyfelszolgalat@naih.hu; telefonszám: +36 (1) 391-1400), illetve
+ o bírósághoz, amely ügyben a Felhasználó dönthet, hogy a lakóhelye vagy tartózkodási helye szerinti
+   törvényszékhez, vagy az Adatkezelő székhelye szerinti törvényszékhez fordul.
+
+8. Adatbiztonság
+Az Adatkezelő mind szervezési, mind technikai szempontból úgy alakítja ki és üzemelteti rendszereit, hogy azok megfeleljenek a GDPR és az egyéb vonatkozó adatbiztonsági követelményeknek. A személyes adatok elérését csak szigorúan jogosult
+személyek számára engedélyezi, a hozzáférést naplózza, és fokozottan ügyel az adatvesztés, az adatok sérülése vagy
+jogosulatlan hozzáférése megelőzésére.
+
+9. Egészségügyi nyilatkozat (Health Disclaimer)
+Jelen Applikáció nem minősül orvosi vagy egészségügyi eszköznek, és nem szolgál betegségek diagnosztizálására, kezelésére vagy megelőzésére. Az itt megjelenő információk és funkciók kizárólag a Felhasználó kényelmét és tájékoztatását szolgálják, és nem helyettesítik az orvosi tanácsadást. Egészségügyi problémák fennállása esetén javasoljuk, hogy a Felhasználó
+minden esetben forduljon szakképzett egészségügyi szolgáltatóhoz.
+</pre>
+
+<!-- Áruház-kategóriák táblázat -->
+<h2>Kategória-megfeleltetés az áruházak felületein</h2>
 <table>
-<thead><tr><th>Kategória</th><th>Példák</th><th>Apple (App Privacy)</th><th>Google (Data Safety)</th></tr></thead>
+<thead><tr><th>Kategória</th><th>Példák</th><th>App Store Connect</th><th>Google Play</th></tr></thead>
 <tbody>
-<tr><td>Regisztrációs adatok</td><td>Név, e-mail, jelszó</td><td>Contact Info › Name, Email Address</td><td>Personal Info › Name, Email address</td></tr>
-<tr><td>Felhasználói azonosító</td><td>Firebase UID, RevenueCat ID</td><td>Identifiers › User ID</td><td>Device or other IDs › User ID</td></tr>
-<tr><td>Eszköz-azonosító</td><td>IDFA / GAID</td><td>Identifiers › Device ID</td><td>Device or other IDs › Advertising ID</td></tr>
-<tr><td>Egészség & Fitnesz</td><td>Testsúly, testméretek</td><td>Health & Fitness › Fitness</td><td>Health & Fitness › Body measurements, Nutrition</td></tr>
-<tr><td>Felhasználói tartalom</td><td>Fotók, jegyzetek</td><td>User Content › Photos or Videos, Other User Content</td><td>Photos & videos, User-generated content</td></tr>
-<tr><td>Vásárlási előzmény</td><td>Előfizetés státusza</td><td>Purchases › Purchase History</td><td>Purchases › Purchase history</td></tr>
-<tr><td>Analitika</td><td>Crash-log, diagnostics</td><td>Identifiers › Device ID (Analytics)</td><td>App info & performance › Crash logs, Diagnostics</td></tr>
+<tr><td>Regisztrációs adatok</td><td>Név, e-mail</td><td>Contact Info › Name, Email Address</td><td>Personal Info › Name, Email address</td></tr>
+<tr><td>Felhasználói ID</td><td>Firebase UID, RevenueCat ID</td><td>Identifiers › User ID</td><td>Device/Other IDs › User ID</td></tr>
+<tr><td>Eszköz-ID</td><td>IDFA / GAID</td><td>Identifiers › Device ID</td><td>Device/Other IDs › Advertising ID</td></tr>
+<tr><td>Egészség & fitnesz</td><td>Testsúly, méretek</td><td>Health & Fitness › Fitness</td><td>Health & Fitness › Body measurements</td></tr>
+<tr><td>User Content</td><td>Fotók, bejegyzések</td><td>User Content › Photos or Videos</td><td>Photos & videos</td></tr>
+<tr><td>Purchases</td><td>Előfizetés státusza</td><td>Purchases › Purchase History</td><td>Purchases › Purchase history</td></tr>
+<tr><td>Analitika</td><td>Crash-log</td><td>Identifiers › Device ID (Analytics)</td><td>App info & performance › Crash logs</td></tr>
 </tbody>
 </table>
-
-<!-- 5 -->
-<h2>5. Az adatkezelés jogalapja</h2>
-<ul>
-  <li><strong>Hozzájárulás</strong> (GDPR 6 § (1) a) – egészségügyi és életmód adatok</li>
-  <li><strong>Szerződés teljesítése</strong> (GDPR 6 § (1) b) – regisztráció, előfizetés, app-funkciók</li>
-  <li><strong>Jogos érdek</strong> (GDPR 6 § (1) f) – rendszerbiztonság, visszaélés-megelőzés</li>
-  <li><strong>Jogi kötelezettség</strong> (GDPR 6 § (1) c) – hatósági megkeresések</li>
-</ul>
-
-<!-- 6 -->
-<h2>6. Díjak, előfizetés, fizetési információk</h2>
-<ul>
-  <li>Az App szolgáltatásai díjkötelesek (Apple / Google kezelik a fizetést)</li>
-  <li>Az Adatkezelő nem tárol fizetési vagy számlázási adatot</li>
-  <li>RevenueCat csak az előfizetés érvényességét adja vissza</li>
-</ul>
-
-<!-- 7 -->
-<h2>7. Az adatkezelés időtartama</h2>
-<ul>
-  <li>Felhasználói fiók & tartalom: a fiók törléséig vagy a hozzájárulás visszavonásáig</li>
-  <li>Előfizetés-adat: lejárat + 60 nap adminisztráció</li>
-  <li>Egészségügyi / életmód adatok: a cél megszűnéséig vagy a hozzájárulás visszavonásáig</li>
-  <li>Crash-log: 30 nap</li>
-</ul>
-
-<!-- 8 -->
-<h2>8. Adattovábbítás, adatfeldolgozók</h2>
-<ul>
-  <li><strong>Google Firebase LLC</strong> – hitelesítés, realtime DB, Storage, crash-log</li>
-  <li><strong>RevenueCat Inc.</strong> – előfizetés-státusz ellenőrzés</li>
-  <li><strong>Apple App Store / Google Play Store</strong> – fizetési tranzakciók</li>
-  <li>Harmadik félnek más módon nem adjuk át, kivéve hatósági kötelezés esetén</li>
-</ul>
-
-<!-- 9 -->
-<h2>9. Felhasználói jogok és jogorvoslat</h2>
-<ul>
-  <li>Tájékoztatás, hozzáférés, helyesbítés, törlés, kezelés korlátozása, tiltakozás</li>
-  <li>Adathordozhatóság (GDPR 20. cikk)</li>
-  <li>Panasz: NAIH – <a href="mailto:ugyfelszolgalat@naih.hu">ugyfelszolgalat@naih.hu</a>, Tel.: +36 1 391-1400</li>
-  <li>Bírósági jogorvoslat: választás szerint a lakóhely/tartózkodási hely szerinti vagy az Adatkezelő székhelye szerinti törvényszéken</li>
-</ul>
-
-<!-- 10 -->
-<h2>10. Adatbiztonság</h2>
-<p>Minden adat TLS / HTTPS csatornán utazik; a felhő-fájlok titkosított formában kerülnek megőrzésre. A hozzáférések jogosultságalapon szabályozottak és naplózottak.</p>
-
-<!-- 11 -->
-<h2>11. Egészségügyi nyilatkozat</h2>
-<p>Az Applikáció nem minősül orvostechnikai eszköznek és nem helyettesíti az orvosi tanácsadást. Egészségügyi kérdésekben mindig fordulj szakképzett szakemberhez.</p>
 
 </body>
 </html>
