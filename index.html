@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <title>TIIAN – Adatkezelési tájékoztató (Android & iOS)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body{font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;max-width:760px;margin:0 auto;padding:1.6rem;line-height:1.6}
+    h1,h2{margin-top:2.2rem}
+    h3{margin-top:1.4rem}
+    ul{margin-left:1.4rem}
+    code{background:#f3f3f3;padding:2px 4px;border-radius:4px;font-size:90%}
+    table{border-collapse:collapse;font-size:0.95rem}
+    th,td{border:1px solid #ccc;padding:6px 9px}
+    th{background:#fafafa}
+  </style>
+</head>
+<body>
+
+<h1>TIIAN Applikáció – Adatkezelési tájékoztató</h1>
+<p><strong>Hatályos: 2025-06-12</strong></p>
+<p>Ez a dokumentum az Android (<em>Google Play Data Safety</em>) és iOS (<em>App Store Connect – App Privacy</em>) szabályainak megfelelően készült.</p>
+
+<h2>1. Az adatkezelő</h2>
+<ul>
+  <li><strong>Név:</strong> TIIAN INVEST Kft.</li>
+  <li><strong>Székhely:</strong> [Cím]</li>
+  <li><strong>E-mail:</strong> <a href="mailto:support@tiian.hu">support@tiian.hu</a></li>
+</ul>
+
+<h2>2. Az adatkezelés célja</h2>
+<p>
+A TIIAN mobilalkalmazás a felhasználók egészségtudatos életmódját támogatja (testsúly-, étkezési-, folyadékbevitel-követés).
+Az alkalmazás előfizetéses (<em>in-app subscription</em>); a fizetési tranzakciókat kizárólag az Apple App Store és a Google Play Store kezeli, az Adatkezelő nem fér hozzá bankkártyaadatokhoz.
+</p>
+
+<h2>3. Kezelt adatkategóriák</h2>
+
+<table>
+<thead>
+<tr><th>Kategória</th><th>Példák</th><th>Apple (App Privacy)</th><th>Google (Data Safety)</th></tr>
+</thead>
+<tbody>
+<tr><td>Regisztrációs adatok</td><td>Név, e-mail cím, jelszó (hash)</td><td><strong>Contact Info › Name, Email Address</strong></td><td>Personal info › Name, Email address</td></tr>
+<tr><td>Felhasználói azonosítók</td><td>Firebase UID, RevenueCat User ID</td><td><strong>Identifiers › User ID</strong></td><td>Device or other IDs › User ID</td></tr>
+<tr><td>Eszköz-azonosító</td><td>IDFA (iOS), GAID (Android)</td><td><strong>Identifiers › Device ID</strong></td><td>Device or other IDs › Advertising ID</td></tr>
+<tr><td>Egészség & fitnesz</td><td>Testsúly, testméretek, étkezési napló</td><td><strong>Health & Fitness › Fitness</strong></td><td>Health & Fitness › Body measurements, Nutrition</td></tr>
+<tr><td>Felhasználói tartalom</td><td>Fotók, jegyzetek, egyéb bejegyzések</td><td><strong>User Content › Photos or Videos, Other User Content</strong></td><td>Photos & videos, User-generated content</td></tr>
+<tr><td>Vásárlási előzmények</td><td>Előfizetés típusa, státusza, érvényesség</td><td><strong>Purchases › Purchase History</strong></td><td>Purchases › Purchase history</td></tr>
+<tr><td>Napló- és analitikai adatok</td><td>Crash-log, IP-cím, eszközmodell</td><td><strong>Identifiers › Device ID (Analytics)</strong></td><td>App info & performance › Crash logs, Diagnostics</td></tr>
+</tbody>
+</table>
+
+<h3>Apple termékoldal (kivonat)</h3>
+<ul>
+  <li><strong>Data Used to Track You</strong>: Device ID (IDFA / GAID) – csak hozzájárulás esetén (ATT prompt).</li>
+  <li><strong>Data Not Linked to You</strong>: Contact Info, Health & Fitness, User Content, Purchases, User ID.</li>
+</ul>
+
+<h3>Google Play „Data Safety” kivonat</h3>
+<ul>
+  <li>Gyűjtött adattípusok: személyes adatok, egészség & fitnesz, fotók & videók, felhasználói tartalom, eszköz-azonosító, vásárlások, app-teljesítmény.</li>
+  <li>Adattitkosítás: minden adat TLS-en keresztül.</li>
+  <li>Törlés: „Profile › Delete account” funkcióval bármikor kérhető.</li>
+  <li>Harmadik félnek nem értékesítjük az adatokat; csak Firebase (analitika) és RevenueCat (előfizetés-kezelés) kap hozzáférést.</li>
+</ul>
+
+<h2>4. Az adatkezelés jogalapja</h2>
+<ul>
+  <li><strong>Hozzájárulás</strong> (GDPR 6 § (1) a) – egészségügyi és életmód adatok.</li>
+  <li><strong>Szerződés teljesítése</strong> (GDPR 6 § (1) b) – regisztráció, előfizetés.</li>
+  <li><strong>Jogos érdek</strong> (GDPR 6 § (1) f) – rendszerbiztonság, csalásmegelőzés.</li>
+  <li><strong>Jogi kötelezettség</strong> (GDPR 6 § (1) c) – hatósági megkeresés.</li>
+</ul>
+
+<h2>5. Adattovábbítás / adatfeldolgozók</h2>
+<ul>
+  <li><strong>Google Firebase LLC</strong> – hitelesítés, felhő adatbázis, crash-log.</li>
+  <li><strong>RevenueCat Inc.</strong> – előfizetés-státusz; pénzügyi adatot nem kap.</li>
+  <li><strong>Apple App Store / Google Play Store</strong> – fizetési tranzakciók.</li>
+</ul>
+
+<h2>6. Adatmegőrzés</h2>
+<ul>
+  <li>Felhasználói fiók & tartalom: a fiók törléséig vagy a hozzájárulás visszavonásáig.</li>
+  <li>Előfizetés-adat: lejárat + 60 nap adminisztráció.</li>
+  <li>Crash-log: 30 nap.</li>
+</ul>
+
+<h2>7. Felhasználói jogok</h2>
+<ul>
+  <li>Tájékoztatás, hozzáférés, helyesbítés, törlés, korlátozás, tiltakozás.</li>
+  <li>Adathordozhatóság (GDPR 20. cikk).</li>
+  <li>Panasz: NAIH – <a href=\"mailto:ugyfelszolgalat@naih.hu\">ugyfelszolgalat@naih.hu</a></li>
+</ul>
+
+<h2>8. Adatbiztonság</h2>
+<p>Minden adat titkosított TLS / HTTPS csatornán kerül továbbításra; a Firebase tárhely titkosított. Hozzáférést kizárólag jogosult munkatársak kapnak, a műveletek naplózottak.</p>
+
+<h2>9. Egészségügyi nyilatkozat</h2>
+<p>Az Applikáció nem minősül orvosi eszköznek, és nem helyettesíti az egészségügyi szakember tanácsát.</p>
+
+</body>
+</html>
